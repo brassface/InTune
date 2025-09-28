@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public final class AboutActivity extends AppCompatActivity {
 
-    private static final String GITHUB_URL = "https://github.com/yourname/Intune"; // 固定写死
+    private static final String GITHUB_URL = "https://github.com/brassface/InTune"; // 固定写死
     private static final String FEEDBACK_EMAIL = "support@example.com"; // 固定写死
 
     @Override
@@ -43,10 +43,12 @@ public final class AboutActivity extends AppCompatActivity {
         });
         tvEmail.setOnClickListener(v -> {
             try {
-                android.content.Intent email = new android.content.Intent(android.content.Intent.ACTION_SENDTO);
-                email.setData(android.net.Uri.parse("mailto:" + FEEDBACK_EMAIL));
-                email.putExtra(android.content.Intent.EXTRA_SUBJECT, "合调用户反馈");
-                startActivity(email);
+                android.content.ClipboardManager cm = (android.content.ClipboardManager) getSystemService(android.content.Context.CLIPBOARD_SERVICE);
+                android.content.ClipData clip = android.content.ClipData.newPlainText("email", FEEDBACK_EMAIL);
+                if (cm != null) {
+                    cm.setPrimaryClip(clip);
+                    android.widget.Toast.makeText(this, "邮箱已复制到剪贴板", android.widget.Toast.LENGTH_SHORT).show();
+                }
             } catch (Exception ignored) {}
         });
     }

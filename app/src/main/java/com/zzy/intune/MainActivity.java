@@ -19,9 +19,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        Toast.makeText(this, "代码更新时间: " + BuildConfig.CODE_UPDATE_TIME, Toast.LENGTH_LONG).show();
-
         RecyclerView rv = findViewById(R.id.rvModes);
         GridLayoutManager grid = new GridLayoutManager(this, 2);
         rv.setLayoutManager(grid);
@@ -161,8 +158,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, AboutActivity.class));
             }
         });
-
-        // 测试页面已移除（旧行已删除，无需再绑定）
     }
 
     private int dp2px(int dp) {
