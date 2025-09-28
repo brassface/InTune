@@ -16,6 +16,19 @@ A concise Android app project example (package `com.zzy.intune`). This repo ship
 - Min SDK: Android 5.0 (API 21)
 - Target SDK: API 30 (`targetSdkVersion = 30`)
 
+## Environment and tool versions
+- JDK: 1.8.0_361 (Java 8)
+- Gradle: 6.7.1 (via project wrapper)
+- Android SDK: `compileSdkVersion = 30`
+- `minSdkVersion = 21`
+- `targetSdkVersion = 30`
+
+Verify locally (optional):
+```bash
+./gradlew -v      # Gradle version & JDK info
+java -version     # JDK version
+```
+
 ## Build locally
 ```bash
 # Clone via SSH

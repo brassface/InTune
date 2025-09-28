@@ -16,6 +16,19 @@
 - 最低版本：Android 5.0（API 21）
 - 目标版本：API 30（`targetSdkVersion = 30`）
 
+## 环境与工具版本
+- JDK：1.8.0_361（Java 8）
+- Gradle：6.7.1（使用仓库自带 wrapper）
+- Android SDK：`compileSdkVersion = 30`
+- `minSdkVersion = 21`
+- `targetSdkVersion = 30`
+
+检查本地版本（可选）：
+```bash
+./gradlew -v      # 查看 Gradle 版本与 JDK
+java -version     # 查看 JDK 版本
+```
+
 ## 本地构建
 ```bash
 # 克隆代码（SSH）
