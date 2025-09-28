@@ -2,7 +2,26 @@
 
 [中文](README.md) | English
 
-A concise Android app project example (package `com.zzy.intune`). This repo ships ready-to-build APKs and demonstrates publishing.
+## Features
+- Real-time tuning: capture pitch via microphone, show target/current note and deviation, and guide tune up/down.
+- Tuning presets: built-in Standard, Drop D, Open G, plus custom presets you can save.
+- Sensitivity threshold: adjustable tolerance with inline help.
+- Theme switching: Light, Dark, and System.
+- Easy feedback: About page links to GitHub and copies support email to clipboard.
+
+## Demo screenshots
+
+> Real device screenshots placed at the repo root.
+<p>
+  <img src="./release_assets/PIC1.jpg" alt="PIC1" width="25%" />
+  <img src="./release_assets/PIC2.jpg" alt="PIC2" width="25%" style="margin-left:5%"/>
+  <img src="./release_assets/PIC3.jpg" alt="PIC3" width="25%" style="margin-left:5%" />
+</p>
+<p>
+  <img src="./release_assets/PIC4.jpg" alt="PIC4" width="25%" />
+  <img src="./release_assets/PIC5.jpg" alt="PIC5" width="25%"
+  style="margin-left:5%" />
+</p>
 
 ## Download
 - See latest and previous releases: https://github.com/brassface/InTune/releases
@@ -52,19 +71,4 @@ Artifacts:
 
 ## Contributing
 Issues and PRs are welcome.
-
-
-## Demo screenshots
-
-> Real device screenshots placed at the repo root.
-
-<p>
-  <img src="./release_assets/PIC1.jpg" alt="PIC1" width="25%" />
-  <img src="./release_assets/PIC2.jpg" alt="PIC2" width="25%" style="margin-left:5%"/>
-  <img src="./release_assets/PIC3.jpg" alt="PIC3" width="25%" style="margin-left:5%" />
-</p>
-<p>
-  <img src="./release_assets/PIC4.jpg" alt="PIC4" width="25%" />
-  <img src="./release_assets/PIC5.jpg" alt="PIC5" width="25%" />
-</p>
 

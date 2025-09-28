@@ -2,7 +2,26 @@
 
 中文 | [English](README.en.md)
 
-简洁的 Android 应用项目示例（包名 `com.zzy.intune`）。本仓库包含可直接构建安装的 APK，并提供发布的示例配置。
+## 功能
+- 实时调音：通过麦克风采集音高，显示目标音、当前音与音高偏差，并提示应升/应降。
+- 调弦预设：内置标准、Drop D、Open G，可创建并保存自定义预设。
+- 灵敏度阈值：可调整调音判定阈值，并提供阈值说明与引导。
+- 主题切换：支持亮色、暗色、跟随系统三种主题。
+- 便捷反馈：关于页一键跳转 GitHub，点击复制反馈邮箱到剪贴板。
+
+## 演示截图
+
+> 以下为应用实机运行截图。
+<p>
+  <img src="./release_assets/PIC1.jpg" alt="PIC1" width="25%" />
+  <img src="./release_assets/PIC2.jpg" alt="PIC2" width="25%" style="margin-left:5%"/>
+  <img src="./release_assets/PIC3.jpg" alt="PIC3" width="25%" style="margin-left:5%" />
+</p>
+<p>
+  <img src="./release_assets/PIC4.jpg" alt="PIC4" width="25%" />
+  <img src="./release_assets/PIC5.jpg" alt="PIC5" width="25%"
+  style="margin-left:5%" />
+</p>
 
 ## 下载
 - 最新版本与历史版本请见 [Releases](https://github.com/brassface/InTune/releases)
@@ -52,24 +71,5 @@ cd InTune
 
 ## 贡献
 欢迎提交 Issue / PR 改进文档与功能。
-
-
-## 演示截图
-
-> 以下为应用实机运行截图（位于仓库根目录）。
-
-<p>
-  <img src="./release_assets/PIC1.jpg" alt="PIC1" width="48%" />
-  <img src="./release_assets/PIC2.jpg" alt="PIC2" width="48%" />
-  
-</p>
-<p>
-  <img src="./release_assets/PIC3.jpg" alt="PIC3" width="48%" />
-  <img src="./release_assets/PIC4.jpg" alt="PIC4" width="48%" />
-  
-</p>
-<p>
-  <img src="./release_assets/PIC5.jpg" alt="PIC5" width="48%" />
-</p>
 
 
