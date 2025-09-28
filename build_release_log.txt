@@ -1,0 +1,8 @@
+Initialized native services in: D:\Files\Gradle\repo\native
+Starting process 'command 'D:\Files\jdk\jdk1.8.0_361\bin\java.exe''. Working directory: D:\ProjectsAll\AndroidStudioProjects\InTune Command: D:\Files\jdk\jdk1.8.0_361\bin\java.exe -version
+Successfully started process 'command 'D:\Files\jdk\jdk1.8.0_361\bin\java.exe''
+To honour the JVM settings for this build a new JVM will be forked. Please consider using the daemon: https://docs.gradle.org/6.7.1/userguide/gradle_daemon.html.
+Starting process 'Gradle build daemon'. Working directory: D:\Files\Gradle\repo\daemon\6.7.1 Command: D:\Files\jdk\jdk1.8.0_361\bin\java.exe -Xmx2048m -Dfile.encoding=UTF-8 -Duser.country=CN -Duser.language=zh -Duser.variant -cp D:\Files\Gradle\repo\wrapper\dists\gradle-6.7.1-bin\6fj1mnv0f0x3250sy6gxui54o\gradle-6.7.1\lib\gradle-launcher-6.7.1.jar org.gradle.launcher.daemon.bootstrap.GradleDaemon 6.7.1
+Successfully started process 'Gradle build daemon'
+终止批处理操作吗(Y/N)? 终止批处理操作吗(Y/N)? 
+^C
