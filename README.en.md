@@ -35,6 +35,7 @@ Artifacts:
 
 ## Release signing
 Keep secrets out of VCS by using user-level `gradle.properties`.
+(Windows default: `C:\Users\<you>\.gradle\gradle.properties`; if `GRADLE_USER_HOME` is set, Gradle also reads `<GRADLE_USER_HOME>\gradle.properties`.)
 
 1) Prepare keystore (if you don't have one):
 ```bash
@@ -73,6 +74,19 @@ android {
     }
 }
 ```
+
+### Signing walkthrough (screenshots)
+Screenshots are placed at the repo root and should be viewed in order:
+
+![Step 1](./1.jpg)
+
+![Step 2](./2.jpg)
+
+![Step 3](./3.jpg)
+
+![Step 4](./4.jpg)
+
+![Step 5](./5.jpg)
 
 Then run:
 ```bash

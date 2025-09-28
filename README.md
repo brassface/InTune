@@ -35,6 +35,7 @@ cd InTune
 
 ## 签名配置（发布构建）
 发布构建依赖 Gradle 签名配置。推荐将敏感信息写入“用户级” `gradle.properties`，避免提交到仓库。
+（Windows 常见路径：`C:\Users\<你>\.gradle\gradle.properties`；如设置了 `GRADLE_USER_HOME`，也会读取该目录下的 `gradle.properties`。）
 
 1) 准备 keystore（若尚无）：
 ```bash
@@ -73,6 +74,19 @@ android {
     }
 }
 ```
+
+### 签名配置图示
+按下列顺序查看截图（位于仓库根目录）：
+
+![签名步骤1](./1.jpg)
+
+![签名步骤2](./2.jpg)
+
+![签名步骤3](./3.jpg)
+
+![签名步骤4](./4.jpg)
+
+![签名步骤5](./5.jpg)
 
 完成后执行：
 ```bash
