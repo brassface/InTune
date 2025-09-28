@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">合调</string>
+    <string name="app_name">在谱</string>
     <string name="title_modes">调弦模式</string>
     <string name="mode_standard">标准六弦</string>
     <string name="mode_drop_d">Drop D</string>

@@ -26,7 +26,7 @@
                 android:id="@+id/tvAppName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="合调"
+                android:text="在谱"
                 android:textStyle="bold"
                 android:textSize="20sp"
                 android:paddingTop="8dp"/>

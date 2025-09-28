@@ -1,4 +1,4 @@
-# 合调 (InTune)
+# 在谱 (InTune)
 
 中文 | [English](README.en.md)
 

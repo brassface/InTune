@@ -26,11 +26,11 @@ public final class AboutActivity extends AppCompatActivity {
 
         tvVer.setText("v" + version);
 
-        String message = "感谢使用 合调 (InTune)! \n\n" +
+        String message = "感谢使用 在谱 (InTune)! \n\n" +
                 "如果觉得好用，欢迎到 GitHub 给作者点个 Star ✨\n" +
                 "你的支持，是我们持续优化的动力 ( •̀ ω •́ )✧\n\n" +
                 "有任何点子/吐槽/建议，都可以发邮件告诉作者：" + FEEDBACK_EMAIL + "\n" +
-                "记得在标题写上：合调用户反馈 —— 方便快速定位（鞠躬）m(_ _)m\n\n" +
+                "记得在标题写上：在谱用户反馈 —— 方便快速定位（鞠躬）m(_ _)m\n\n" +
                 "本软件为免费开源软件。如果您是通过付费渠道获取，请立即申请退款，并从GitHub发布页下载。";
         tvMsg.setText(message);
 
