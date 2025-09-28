@@ -54,3 +54,18 @@ cd InTune
 欢迎提交 Issue / PR 改进文档与功能。
 
 
+## 演示截图
+
+> 以下为应用实机运行截图（位于仓库根目录）。
+
+![PIC1](./PIC1.jpg)
+
+![PIC2](./PIC2.jpg)
+
+![PIC3](./PIC3.jpg)
+
+![PIC4](./PIC4.jpg)
+
+![PIC5](./PIC5.jpg)
+
+

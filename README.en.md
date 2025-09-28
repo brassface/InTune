@@ -54,3 +54,17 @@ Artifacts:
 Issues and PRs are welcome.
 
 
+## Demo screenshots
+
+> Real device screenshots placed at the repo root.
+
+![PIC1](./PIC1.jpg)
+
+![PIC2](./PIC2.jpg)
+
+![PIC3](./PIC3.jpg)
+
+![PIC4](./PIC4.jpg)
+
+![PIC5](./PIC5.jpg)
+
