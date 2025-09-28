@@ -58,14 +58,18 @@ cd InTune
 
 > 以下为应用实机运行截图（位于仓库根目录）。
 
-<img src="./release_assets/PIC1.jpg" alt="PIC1" width="360" />
-
-<img src="./release_assets/PIC2.jpg" alt="PIC2" width="360" />
-
-<img src="./release_assets/PIC3.jpg" alt="PIC3" width="360" />
-
-<img src="./release_assets/PIC4.jpg" alt="PIC4" width="360" />
-
-<img src="./release_assets/PIC5.jpg" alt="PIC5" width="360" />
+<p>
+  <img src="./release_assets/PIC1.jpg" alt="PIC1" width="48%" />
+  <img src="./release_assets/PIC2.jpg" alt="PIC2" width="48%" />
+  
+</p>
+<p>
+  <img src="./release_assets/PIC3.jpg" alt="PIC3" width="48%" />
+  <img src="./release_assets/PIC4.jpg" alt="PIC4" width="48%" />
+  
+</p>
+<p>
+  <img src="./release_assets/PIC5.jpg" alt="PIC5" width="48%" />
+</p>
 
 
