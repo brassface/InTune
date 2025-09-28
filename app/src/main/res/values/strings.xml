@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">合调</string>
+    <string name="title_modes">调弦模式</string>
+    <string name="mode_standard">标准六弦</string>
+    <string name="mode_drop_d">Drop D</string>
+    <string name="mode_open_g">Open G</string>
+    <string name="mode_custom">自定义</string>
+    <string name="permission_mic_rationale">需要录音权限以进行实时音高检测用于调弦</string>
+    <string name="permission_mic_denied">录音权限被拒绝，无法进行调音</string>
+    <string name="btn_back">返回</string>
+    <string name="tune_higher">调高</string>
+    <string name="tune_lower">调低</string>
+    <string name="pitch_target">目标</string>
+    <string name="modes_label">选择模式</string>
+    <string name="title_settings">系统设置</string>
+    <string name="theme_mode">主题模式</string>
+    <string name="theme_light">浅色</string>
+    <string name="theme_dark">深色</string>
+    <string name="theme_system">跟随系统</string>
+    <string name="title_test">测试</string>
+    <string name="test_guitar_image">吉他背景图片</string>
+    <string name="save_as_preset">保存为预设</string>
+    <string name="preset_name_hint">输入预设名称</string>
+    <string name="error_preset_exists">预设名称已存在</string>
+    <string name="error_preset_length">名称不能超过20个字符</string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="choose_note">选择目标音阶</string>
+</resources>

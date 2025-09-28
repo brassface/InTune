@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_back"
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:layout_gravity="start|center_vertical" />
+
+        <TextView
+            android:id="@+id/tvModeName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mode"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_gravity="center" />
+
+        <Button
+            android:id="@+id/btnSavePreset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/save_as_preset"
+            android:visibility="gone"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:layout_gravity="end|center_vertical" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp">
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="54dp"
+            android:background="#BBBBBB" />
+
+        <TextView
+            android:id="@+id/tvCurrent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="当前音阶: --"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorOnSurface"
+            android:layout_gravity="center_horizontal"
+            android:textAlignment="center"
+            android:paddingTop="8dp" />
+
+        <FrameLayout
+            android:id="@+id/viewCircle"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_circle">
+
+            <TextView
+                android:id="@+id/tvDiff"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="+0"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorNeutral" />
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tvDirection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:paddingTop="8dp" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="54dp"
+            android:background="#BBBBBB"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/tvTarget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="E"
+            android:textSize="18sp"
+            android:layout_marginTop="8dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.3"
+        android:orientation="vertical"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingBottom="16dp">
+
+        <!-- 6 根从细到粗：E4, B3, G3, D3, A2, E2 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp">
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_note_rect">
+                <TextView
+                    android:id="@+id/btnTuner1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="@dimen/tuner_button_min_width"
+                    android:text="E4"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="@color/btn_note_text"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:gravity="center" />
+                <ImageView
+                    android:id="@+id/btnSwitch1"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_edit_note"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_marginRight="8dp"
+                    android:visibility="gone" />
+            </FrameLayout>
+            <View
+                android:id="@+id/lineString1"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="12dp"
+                android:background="@drawable/line_base_bg" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp">
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_note_rect">
+                <TextView
+                    android:id="@+id/btnTuner2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="@dimen/tuner_button_min_width"
+                    android:text="B3"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="@color/btn_note_text"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:gravity="center" />
+                <ImageView
+                    android:id="@+id/btnSwitch2"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_edit_note"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_marginRight="8dp"
+                    android:visibility="gone" />
+            </FrameLayout>
+            <View
+                android:id="@+id/lineString2"
+                android:layout_width="0dp"
+                android:layout_height="3dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="12dp"
+                android:background="@drawable/line_base_bg" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp">
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_note_rect">
+                <TextView
+                    android:id="@+id/btnTuner3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="@dimen/tuner_button_min_width"
+                    android:text="G3"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="@color/btn_note_text"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:gravity="center" />
+                <ImageView
+                    android:id="@+id/btnSwitch3"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_edit_note"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_marginRight="8dp"
+                    android:visibility="gone" />
+            </FrameLayout>
+            <View
+                android:id="@+id/lineString3"
+                android:layout_width="0dp"
+                android:layout_height="4dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="12dp"
+                android:background="@drawable/line_base_bg" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp">
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_note_rect">
+                <TextView
+                    android:id="@+id/btnTuner4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="@dimen/tuner_button_min_width"
+                    android:text="D3"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="@color/btn_note_text"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:gravity="center" />
+                <ImageView
+                    android:id="@+id/btnSwitch4"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_edit_note"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_marginRight="8dp"
+                    android:visibility="gone" />
+            </FrameLayout>
+            <View
+                android:id="@+id/lineString4"
+                android:layout_width="0dp"
+                android:layout_height="5dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="12dp"
+                android:background="@drawable/line_base_bg" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp">
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_note_rect">
+                <TextView
+                    android:id="@+id/btnTuner5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="@dimen/tuner_button_min_width"
+                    android:text="A2"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="@color/btn_note_text"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:gravity="center" />
+                <ImageView
+                    android:id="@+id/btnSwitch5"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_edit_note"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_marginRight="8dp"
+                    android:visibility="gone" />
+            </FrameLayout>
+            <View
+                android:id="@+id/lineString5"
+                android:layout_width="0dp"
+                android:layout_height="6dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="12dp"
+                android:background="@drawable/line_base_bg" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp">
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_note_rect">
+                <TextView
+                    android:id="@+id/btnTuner6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="@dimen/tuner_button_min_width"
+                    android:text="E2"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="@color/btn_note_text"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:gravity="center" />
+                <ImageView
+                    android:id="@+id/btnSwitch6"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_edit_note"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_marginRight="8dp"
+                    android:visibility="gone" />
+            </FrameLayout>
+            <View
+                android:id="@+id/lineString6"
+                android:layout_width="0dp"
+                android:layout_height="7dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="12dp"
+                android:background="@drawable/line_base_bg" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+

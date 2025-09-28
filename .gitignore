@@ -1,0 +1,41 @@
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+
+# Android build outputs
+app/build/
+**/build/
+
+# Gradle
+.gradle/
+gradle/
+gradlew.bat
+gradlew
+
+# Keystore/credentials (if any)
+*.jks
+*.keystore
+*.keystore.properties
+
+# IDE
+/.idea/
+*.ipr
+*.iws
+*.idea/
+
+# Misc
+.DS_Store
+Thumbs.db
+

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- 简化的吉他琴头轮廓（不含旋钮与琴弦） -->
+    <!-- 外轮廓填充 -->
+    <path
+        android:fillColor="@color/colorOnSurface"
+        android:fillType="nonZero"
+        android:pathData="M8,22
+                          L16,22
+                          C18.2,22 20,20.2 20,18
+                          L20,9.8
+                          C20,8.4 20.9,7.3 21.6,6.3
+                          C22.3,5.3 21.6,4 20.3,4
+                          C19.1,4 17.8,4.6 16.4,5.4
+                          C15.4,6 14.6,6.4 13.8,6.6
+                          C13.0,6.8 12.2,6.8 11.4,6.6
+                          C10.6,6.4 9.8,6 8.8,5.4
+                          C7.4,4.6 6.1,4 4.9,4
+                          C3.6,4 2.9,5.3 3.6,6.3
+                          C4.3,7.3 5.2,8.4 5.2,9.8
+                          L5.2,18
+                          C5.2,20.2 7.0,22 9.2,22
+                          Z"/>
+
+    <!-- 内部高光/装饰（可选） -->
+    <path
+        android:fillColor="#20FFFFFF"
+        android:pathData="M7.5,20.2
+                          C9.0,19.8 10.8,19.6 12,19.6
+                          C13.2,19.6 15.0,19.8 16.5,20.2
+                          C16.0,21.0 15.2,21.4 14.4,21.6
+                          L9.6,21.6
+                          C8.8,21.4 8.0,21.0 7.5,20.2 Z"/>
+
+</vector>
+
+
