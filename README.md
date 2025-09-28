@@ -58,14 +58,14 @@ cd InTune
 
 > 以下为应用实机运行截图（位于仓库根目录）。
 
-![PIC1](./PIC1.jpg)
+<img src="./release_assets/PIC1.jpg" alt="PIC1" width="360" />
 
-![PIC2](./PIC2.jpg)
+<img src="./release_assets/PIC2.jpg" alt="PIC2" width="360" />
 
-![PIC3](./PIC3.jpg)
+<img src="./release_assets/PIC3.jpg" alt="PIC3" width="360" />
 
-![PIC4](./PIC4.jpg)
+<img src="./release_assets/PIC4.jpg" alt="PIC4" width="360" />
 
-![PIC5](./PIC5.jpg)
+<img src="./release_assets/PIC5.jpg" alt="PIC5" width="360" />
 
 
