@@ -59,16 +59,12 @@ Issues and PRs are welcome.
 > Real device screenshots placed at the repo root.
 
 <p>
-  <img src="./release_assets/PIC1.jpg" alt="PIC1" width="48%" />
-  <img src="./release_assets/PIC2.jpg" alt="PIC2" width="48%" />
-  
+  <img src="./release_assets/PIC1.jpg" alt="PIC1" width="25%" />
+  <img src="./release_assets/PIC2.jpg" alt="PIC2" width="25%" style="margin-left:5%"/>
+  <img src="./release_assets/PIC3.jpg" alt="PIC3" width="25%" style="margin-left:5%" />
 </p>
 <p>
-  <img src="./release_assets/PIC3.jpg" alt="PIC3" width="48%" />
-  <img src="./release_assets/PIC4.jpg" alt="PIC4" width="48%" />
-  
-</p>
-<p>
-  <img src="./release_assets/PIC5.jpg" alt="PIC5" width="48%" />
+  <img src="./release_assets/PIC4.jpg" alt="PIC4" width="25%" />
+  <img src="./release_assets/PIC5.jpg" alt="PIC5" width="25%" />
 </p>
 
